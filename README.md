@@ -1,8 +1,13 @@
-# React + Vite
+# To Run locally, follow the following steps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Goto Server folder
 
-Currently, two official plugins are available:
+## 2. Run in terminal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`npm start`
+
+## 3. Go to project root folder
+
+## 4. Command in another terminal
+
+`npm run dev`

@@ -3,11 +3,8 @@ import plusIcon from './../assets/images/plus.png';
 import tickIcon from './../assets/images/double-tick.png';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import {
-   acTodoAdd,
-   acTodoClearCompleted,
-   acTodoCompleteAll,
-} from '../redux/todo/actions';
+import { acTodoClearCompleted, acTodoCompleteAll } from '../redux/todo/actions';
+import postTodo from '../redux/todo/thunks/postTodo';
 
 export default function Header() {
    const [todoTitle, setTodoTitle] = useState('');
@@ -15,7 +12,7 @@ export default function Header() {
 
    const submitHandler = (e) => {
       e.preventDefault();
-      dispatch(acTodoAdd(todoTitle));
+      dispatch(postTodo(todoTitle));
       setTodoTitle('');
    };
 

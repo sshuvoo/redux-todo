@@ -4,6 +4,7 @@ import {
    todoCompleteAll,
    todoCompletingToggle,
    todoDelete,
+   todoLoad,
    todoSetColor,
 } from './actionTypes';
 
@@ -11,6 +12,8 @@ const initialState = [];
 
 const reducer = (state = initialState, action) => {
    switch (action.type) {
+      case todoLoad:
+         return action.payload;
       case todoAdd:
          if (action.payload.trim() === '') {
             return [...state];

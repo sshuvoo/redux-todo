@@ -6,10 +6,18 @@ import {
    todoDelete,
    todoFilterByColor,
    todoFilterByCompletion,
+   todoLoad,
    todoSetColor,
 } from './actionTypes';
 
 // acTodo is the prefix for all todo action creator
+export const acTodoLoad = (todos) => {
+   return {
+      type: todoLoad,
+      payload: todos,
+   };
+};
+
 export const acTodoAdd = (text) => {
    return {
       type: todoAdd,

@@ -1,12 +1,20 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Todo from './components/Todo';
+import { useEffect } from 'react';
+import fetchTodos from './redux/todo/thunks/fetchTodos';
 
 export default function App() {
    const todos = useSelector((state) => state.todoState);
    const { filterBy, colors } = useSelector((state) => state.todoFilter);
+   const dispatch = useDispatch();
+
+   useEffect(() => {
+      dispatch(fetchTodos);
+   }, [dispatch]);
+
    return (
       <div className="grid place-items-center bg-blue-100 h-screen px-6 font-sans">
          <Navbar />

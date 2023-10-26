@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "title": "Bangladesh",
+      "id": 1,
+      "color": "green",
+      "completedStatus": false
+    },
+    {
+      "title": "India",
+      "id": 2,
+      "color": "yellow",
+      "completedStatus": false
+    },
+    {
+      "title": "United Arab Emirates",
+      "id": 3,
+      "color": "red",
+      "completedStatus": true
+    }
+  ]
+}

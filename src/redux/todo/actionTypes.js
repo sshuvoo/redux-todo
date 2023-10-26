@@ -1,3 +1,4 @@
+export const todoLoad = 'todo/load';
 export const todoAdd = 'todo/add';
 export const todoCompletingToggle = 'todo/completingToggle';
 export const todoSetColor = 'todo/setColor';
